@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:ital,wght@0,300;1,200&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:ital@1&family=Raleway:ital,wght@0,300;1,200&family=Roboto:wght@300;400&display=swap');
+:root{
+    --red-bg: #a52a2a;
+    --red-bghover:#741818;
+    --salmon-bg:#fa8072;
+    --font-1: "Roboto", sans-serif;
+    --font-2:"Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.logo{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    font-family: var(--font-1);
+    background-color: black;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav__list{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.nav__link{
+    color: var(--red-bg);
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+    color: var(--salmon-bg);
+}
+
+.container{
+    background-color: var(--red-bg) ;
+    font-family: var(--font-2);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__container{
+    
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    color: var(--red-bg);
+    display: flex;
+    flex-direction: column;
+    width: 75vh;
+    max-width: 400px;
+
+}
+
+fomr label{
+    padding-bottom: 10px;
+}
+
+form input{
+    margin-bottom: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn{
+    background: var(--red-bg);
+    color :white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--red-bghover);
+}
+
+.login__img{
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .login__container{
+        max-width: 700px;
+        width: 100%;
+        border-radius: 20px;
+        min-height: 200px;
+        max-height: 300px;
+        height: 60%;
+    }
+
+    .login__img{
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url(/Img/f29a85b01260d7a4f477b8e4646e94b4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0 20px 20px 0;
+    }
+
+    form{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+/* flex wrap */
